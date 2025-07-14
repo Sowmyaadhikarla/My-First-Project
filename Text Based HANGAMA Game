@@ -1,0 +1,65 @@
+import streamlit as st
+import random
+
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f8ff; /* light blue */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+if 'word' not in st.session_state:
+    st.session_state.word = random.choice(["python", "jumping", "frontend", "backend", "programming", "fullstack", "meanstack"]).lower()
+    st.session_state.guessed_letters = []
+    st.session_state.tries = 6
+
+
+display_word = ""
+for letter in st.session_state.word:
+    if letter in st.session_state.guessed_letters:
+        display_word += letter
+    else:
+        display_word += "_"
+
+st.title("Word Guessing Game 🎮")
+st.write("Word: " + " ".join(display_word.upper()))
+st.write(f"Tries Left: {st.session_state.tries}")
+
+guess = st.text_input("Guess a letter", max_chars=1).lower()
+
+if guess and guess not in st.session_state.guessed_letters:
+    st.session_state.guessed_letters.append(guess)
+
+    if guess not in st.session_state.word:
+        st.session_state.tries -= 1
+        st.warning(f"Wrong guess! '{guess}' is not in the word.")
+        
+if "_" not in display_word:
+    st.success("🎉 Congratulations! You guessed the word.")
+    st.write("The word was:", st.session_state.word)
+    if st.button("Play Again"):
+        st.session_state.clear()
+
+elif st.session_state.tries == 0:
+    st.error("💀 Game Over!")
+    st.write("The word was:", st.session_state.word)
+    if st.button("Try Again"):
+        st.session_state.clear()
+        
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f8ff; /* light blue */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
