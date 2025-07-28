@@ -44,8 +44,7 @@ Welcome to my GitHub repository showcasing all the tasks I completed as part of 
 
 ## 🤝 Connect With Me
 
-- 🔗 [LinkedIn]([https://www.linkedin.com/in/sowmya-jyothi-1625302a7?])
-
+- 🔗 [LinkedIn](https://www.linkedin.com/in/sowmya-jyothi-1625302a7)
 ---
 
 > ✅ Feel free to explore the code, suggest improvements, or fork this repository!
