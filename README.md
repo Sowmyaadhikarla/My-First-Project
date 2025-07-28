@@ -8,7 +8,7 @@ Welcome to my GitHub repository showcasing all the tasks I completed as part of 
 
 - 💼 **Organization**: @CodeAlpha
 - 🧠 **Track**: Python Developer Internship
-- 📅 **Duration**: [Your Duration, e.g., July 2025]
+- 📅 **Duration**: 1st to 31st July 2025{One month}
 - 🛠️ **Skills Applied**: Python, OOP, file handling, loops, conditionals, data structures, logic building, chatbot development, games, and more.
 
 ---
@@ -44,7 +44,7 @@ Welcome to my GitHub repository showcasing all the tasks I completed as part of 
 
 ## 🤝 Connect With Me
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)
+- 🔗 [LinkedIn]([(https://www.linkedin.com/in/sowmya-jyothi-1625302a7?)])
 
 ---
 
