@@ -1,67 +1,51 @@
-# My-First-Project
-import streamlit as st
-import random
+# 🐍 CodeAlpha Python Internship Projects
 
+Welcome to my GitHub repository showcasing all the tasks I completed as part of the **CodeAlpha Python Internship**. This internship helped me strengthen my foundational and intermediate skills in Python programming through hands-on projects.
 
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #f0f8ff; /* light blue */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+---
 
+## 📌 Internship Overview
 
+- 💼 **Organization**: CodeAlpha
+- 🧠 **Track**: Python Developer Internship
+- 📅 **Duration**: [Your Duration, e.g., July 2025]
+- 🛠️ **Skills Applied**: Python, OOP, file handling, loops, conditionals, data structures, logic building, chatbot development, games, and more.
 
-if 'word' not in st.session_state:
-    st.session_state.word = random.choice(["python", "jumping", "frontend", "backend", "programming", "fullstack", "meanstack"]).lower()
-    st.session_state.guessed_letters = []
-    st.session_state.tries = 6
+---
 
+## ✅ Tasks Completed
 
-display_word = ""
-for letter in st.session_state.word:
-    if letter in st.session_state.guessed_letters:
-        display_word += letter
-    else:
-        display_word += "_"
+| Task No | Project Name                  | Description                                                | Status |
+|--------:|-------------------------------|------------------------------------------------------------|--------|
+| Task 1  | Stock Portfolio Tracker        | A console app to take user stock inputs and print values.  | ✅ Done |
+| Task 2  | Hangman Game                   | A fun text-based Hangman game using loops and string logic.| ✅ Done |
+| Task 3  | Rule-Based Chatbot             | A simple chatbot with hardcoded responses and user input.  | ✅ Done |
 
-st.title("Word Guessing Game 🎮")
-st.write("Word: " + " ".join(display_word.upper()))
-st.write(f"Tries Left: {st.session_state.tries}")
+---
 
-guess = st.text_input("Guess a letter", max_chars=1).lower()
+## 🔧 Technologies Used
 
-if guess and guess not in st.session_state.guessed_letters:
-    st.session_state.guessed_letters.append(guess)
+- Python 3.x
+- VS Code / PyCharm
+- Terminal / Command Line
+- CapCut (for video editing & captioning)
+- Git & GitHub (version control)
 
-    if guess not in st.session_state.word:
-        st.session_state.tries -= 1
-        st.warning(f"Wrong guess! '{guess}' is not in the word.")
-        
-if "_" not in display_word:
-    st.success("🎉 Congratulations! You guessed the word.")
-    st.write("The word was:", st.session_state.word)
-    if st.button("Play Again"):
-        st.session_state.clear()
+---
 
-elif st.session_state.tries == 0:
-    st.error("💀 Game Over!")
-    st.write("The word was:", st.session_state.word)
-    if st.button("Try Again"):
-        st.session_state.clear()
-        
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #f0f8ff; /* light blue */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+## 🌟 Learning Outcomes
 
+- Improved core Python skills
+- Better understanding of logic building
+- Hands-on experience with small-scale applications
+- Gained confidence in problem-solving with code
+
+---
+
+## 🤝 Connect With Me
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)
+
+---
+
+> ✅ Feel free to explore the code, suggest improvements, or fork this repository!
