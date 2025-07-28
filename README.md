@@ -6,7 +6,7 @@ Welcome to my GitHub repository showcasing all the tasks I completed as part of 
 
 ## 📌 Internship Overview
 
-- 💼 **Organization**: CodeAlpha
+- 💼 **Organization**: @CodeAlpha
 - 🧠 **Track**: Python Developer Internship
 - 📅 **Duration**: [Your Duration, e.g., July 2025]
 - 🛠️ **Skills Applied**: Python, OOP, file handling, loops, conditionals, data structures, logic building, chatbot development, games, and more.
